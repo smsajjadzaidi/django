@@ -22,5 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('blog/', include('blog.urls')),
     path('covid/', include('covid.urls')),
-    path('employees/', views.EmployeesList.as_view())
+    path('employees/', views.EmployeesList.as_view()),
+    path('portfolio/', include('portfolio.urls'))
 ]

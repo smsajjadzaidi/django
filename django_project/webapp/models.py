@@ -8,5 +8,3 @@ class Employees(models.Model):
     def __str__(self):
         return self.first_name 
 
-    def __repr__(self):
-        return self.employee_id

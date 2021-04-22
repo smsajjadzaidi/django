@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Mubasher | Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  {% load static %}
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'portfolio/fonts/icomoon/style.css' %}">
+  <link rel="stylesheet" href="{% static 'portfolio/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'portfolio/css/animate.css' %}">
+  <link rel="stylesheet" href="{% static 'portfolio/css/owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static 'portfolio/css/owl.theme.default.min.css' %}">
+  <link rel="stylesheet" href="{% static 'portfolio/css/bootstrap-datepicker.css' %}">
+
+
+  <link rel="stylesheet" href="{% static 'portfolio/fonts/flaticon/font/flaticon.css' %}">
+
+  <link rel="stylesheet" href="{% static 'portfolio/css/aos.css' %}">
+  <link rel="stylesheet" href="{% static 'portfolio/css/jquery.fancybox.min.css' %}">
+
+
+  <link rel="stylesheet" href="{% static 'portfolio/css/style.css' %}">
+
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+
+    <div class="site-navbar-wrap" id="main">
+
+      <div class="site-navbar site-navbar-target js-sticky-header">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-6 col-md-4">
+              <h1 class="my-0 site-logo"><a href="{% url 'index' %}">Mubasher<span
+                    class="text-primary">.</span> </a></h1>
+            </div>
+            <div class="col-6 col-md-8">
+              <nav class="site-navigation text-right" role="navigation">
+                <div class="container">
+
+                  <div class="d-inline-block d-lg-block ml-md-0 mr-auto py-3"><a href="#"
+                      class="site-menu-toggle js-menu-toggle text-black">
+                      <span class="icon-menu h3"></span> <span class="menu-text"></span>
+                    </a></div>
+
+                  <ul class="site-menu main-menu js-clone-nav d-none d-lg-none">
+                    <li><a href="#home-section" class="nav-link">Home</a></li>
+                    <li><a href="#about-section" class="nav-link">About</a></li>
+                    <li><a href="#what-we-do-section" class="nav-link">Services</a></li>
+                    <li><a href="#portfolio-section" class="nav-link">Portfolio</a></li>
+                    <li><a href="#contact-section" class="nav-link">Contact</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-blocks-cover" id="home-section">
+      <div class="img-wrap">
+        <div class="owl-carousel slide-one-item hero-slider">
+          <div class="slide overlay">
+            <img src="{% static 'portfolio/images/code.jpg' %}" alt="Image" class="img-fluid">
+          </div>
+          <div class="slide overlay">
+            <img src="{% static 'portfolio/images/websites.jpg' %}" alt="Image" class="img-fluid">
+          </div>
+          <div class="slide overlay">
+            <img src="{% static 'portfolio/images/angular.jpg' %}" alt="Image" class="img-fluid">
+          </div>
+          <div class="slide overlay">
+            <img src="{% static 'portfolio/images/react.png' %}" alt="Image" class="img-fluid">
+          </div>
+          <div class="slide overlay">
+            <img src="{% static 'portfolio/images/django.jpg' %}" alt="Image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 align-self-center">
+            <div class="intro">
+              <div class="heading">
+                <h1>Mubasher Ahmad</h1>
+              </div>
+              <div class="text">
+                <p class="sub-text mb-5">Full Stack Developer</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="site-section" id="about-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-5">
+            <img src="{% static 'portfolio/images/code.jpg' %}" alt="Image" class="img-fluid" class="img-fluid">
+          </div>
+          <div class="col-lg-5 ml-auto section-title">
+            <span class="sub-title mb-2 d-block">About</span>
+            <h2 class="title text-primary mb-3">I'm Expert in Development</h2>
+            <p class="mb-4">
+              I have experience of Web and Mobile App Development for almost more than a year. I am currently
+              working in Funnel Beam as a Full Stack Developer. I have also done several free lancing projects during my academic
+              period. I have keen interest in hands on learning the latest technologies. I'm hard working and fully devoted to my work.
+            </p>
+            <div class="d-flex">
+              <ul class="list-unstyled ul-check success mr-5">
+                <li>Web Development</li>
+                <li>Android App Development</li>
+                <li>Python Development</li>
+                <li>Cloud Computing</li>
+                <li>Design</li>
+              </ul>
+            </div>
+
+            <div class="row">
+          <div class="col-12 about-btn-container">
+
+            <!-- <a href="{% static 'portfolio/MubasherAhmadCV.pdf' %}" style="margin-right: 30px;">
+              <button type="submit" class="btn btn-primary btn-md">View Details</button>
+            </a> -->
+            <a href="{% static 'portfolio/MubasherAhmadCV.pdf' %}">
+              <button type="submit" class="btn btn-primary btn-md">View Resume</button>
+            </a>
+          </div>
+        </div>
+
+            <!--
+            <p><a data-fancybox data-ratio="2" href="https://vimeo.com/326176805" class="d-flex align-items-center"><span class="icon-play_circle_outline h4 m-0 mr-2"></span> <span>Watch the video</span></a></p>
+            -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="site-section bg-light" id="what-we-do-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-6 section-title">
+            <span class="sub-title mb-2 d-block">My Services</span>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 ml-auto">
+            <div class="row">
+
+              <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+                <div class="service h-100">
+                  <span class="icon-laptop_mac display-4 text-primary d-block mb-4"></span>
+                  <h3>Web Applications</h3>
+                  <p>I have experience in web development for more than a year. I prefer latest and demanding technologies like
+                    <b>REACT JS</b>, <b>Angular JS</b>  and <b>DJANGO</b> with <b>Firebase</b> Cloud. </p>
+                  <!-- <p><a href="#" class="readmore">Learn more</a></p> -->
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+                <div class="service h-100">
+                  <span class="icon-mobile display-4 text-primary d-block mb-4"></span>
+                  <h3>Mobile Applications</h3>
+                  <p>I have quite experience in Mobile App Development. I have done several mobile app projects in 
+                    cross platform technologies <b>REACT Native</b> with <b>Firebase</b> Cloud. </p>
+                  <!-- <p><a href="#" class="readmore">Learn more</a></p> -->
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+                <div class="service h-100">
+                  <span class="icon-desktop display-4 text-primary d-block mb-4"></span>
+                  <h3>Desktop Applications</h3>
+                  <p>I've done multiple desktop app projects including an inventory system, a learning management system
+                    and a project grade calculating
+                     system using <b>.NET</b> </p>
+                  <!-- <p><a href="#" class="readmore">Learn more</a></p> -->
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="site-section" id="portfolio-section">
+      <div class="container">
+        <div class="row mb-5 ">
+          <div class="col-md-8 section-title text-center mx-auto">
+            <span class="sub-title mb-2 d-block">Work Experience</span>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-6 mb-4 mb-lg-0 img-float-container">
+            <img src="{% static 'portfolio/images/fnb-logo.png' %}" alt="Image" class="img-fluid" class="img-fluid">
+          </div>
+          <div class="col-lg-5 h-100 jm-sticky-top ml-auto">
+            <h3>Funnel Beam</h3>
+            <p class="mb-5" style="margin: 0px !important"><strong class="text-black">Software Engineer</strong>
+            <p class="mb-5" style="margin-bottom: 1rem!important;">April 2020 - Present</p>
+            <p class="mb-4">
+              I'm currently working here as a Software Engineer. I've created different modules 
+              in their Angular Web App including person/company enrichment, data posting to CRM, 
+              display customer stats/summary and drag and drop UI for process flows.
+              Migrated their web app from Angular JS to React JS.
+              Updation and resolving bugs in automated Lead/Account Enrichment.
+              Wrote website scrapers for LinkedIn, ZoomInfo and Owler.
+              Updation and bugs fixing in pre written code of automated email finding.
+              Created celeries for different scheduled tasks.
+              Interaction with GCP, Digital Ocean Droplets, Kafka.
+              Documentation of several modules, including wikis, flowcharts, sequence diagrams and system diagrams.
+            </p>
+            </p>
+
+            <p class="mb-4"><a href="https://www.linkedin.com/company/funnelbeam/" class="readmore">See More</a></p>
+          </div>
+        </div>        
+        
+
+
+      </div>
+
+    </div>
+
+    <!-- End Experience -->
+
+
+    <div class="site-section" id="portfolio-section">
+      <div class="container">
+        <div class="row mb-5 ">
+          <div class="col-md-8 section-title text-center mx-auto">
+            <span class="sub-title mb-2 d-block">Recent Works</span>
+
+          </div>
+        </div>
+         <div class="row mb-5">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <img src="{% static 'portfolio/images/dipleo1.png' %}" alt="Image" class="img-fluid" class="img-fluid">
+            <img src="{% static 'portfolio/images/dipleo2.png' %}" alt="Image" class="img-fluid" class="img-fluid">
+            <img src="{% static 'portfolio/images/dipleo3.png' %}" alt="Image" class="img-fluid"
+              class="img-fluid">
+          </div>
+          <div class="col-lg-5 h-100 jm-sticky-top ml-auto">
+            <h3>Dipleo</h3>
+            <p class="mb-4">An online job finding platform. It was developed by a team of two people. I worked as a front end developer.
+              I was given some basic UI (HTML/CSS) of the web app. I integrated all APIs that were developed by the other
+              team member and also added various dynamic features like video recording 
+              from web cam, loading widgets and some animations.. We used github as a version control tool. 
+            </p>
+            <p class="mb-5"><strong class="text-black">Technologies:</strong> Django, Django REST framework
+            </p>
+
+            <p class="mb-4"><a href="http://dipleo.com:8000/" class="readmore">Visit website</a></p>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <img src="{% static 'portfolio/images/eCopiesHome.jpeg' %}" alt="Image" class="img-fluid" class="img-fluid">
+            <img src="{% static 'portfolio/images/eCopiesMyOrders.jpeg' %}" alt="Image" class="img-fluid" class="img-fluid">
+            <img src="{% static 'portfolio/images/eCopiesPayments.jpeg' %}" alt="Image" class="img-fluid"
+              class="img-fluid">
+          </div>
+          <div class="col-lg-5 h-100 jm-sticky-top ml-auto">
+            <h3>eCopies</h3>
+            <p class="mb-4">
+               A mobile app to get certified/attested copies from any department. I designed, developed, tested and deployed the complete system on my own. This system consists of one consumer app, one receiver app and one admin end web app. 
+            </p>
+            <p class="mb-5"><strong class="text-black">Technologies:</strong> React JS, React Native, Firebase, Node.js, Express, Redux            </p>
+
+            <p class="mb-4"><a href="https://play.google.com/store/apps/details?id=com.ecopies" class="readmore">Download from Google Play</a></p>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <img src="{% static 'portfolio/images/RentInnHome.png' %}" alt="Image" class="img-fluid" class="img-fluid">
+            <img src="{% static 'portfolio/images/RentInnView.png' %}" alt="Image" class="img-fluid" class="img-fluid">
+            <img src="{% static 'portfolio/images/RentInnGoogleMaps.png' %}" alt="Image" class="img-fluid"
+              class="img-fluid">
+          </div>
+          <div class="col-lg-5 h-100 jm-sticky-top ml-auto">
+            <h3>Rent Inn</h3>
+            <p class="mb-4">A property renting web app. User can list his/her property and can take a property on rent.
+            </p>
+            <p class="mb-5"><strong class="text-black">Technologies:</strong> React, Firebase, Node.js, Express, Redux
+            </p>
+
+            <p class="mb-4"><a href="http://rent-inn-official.herokuapp.com/" class="readmore">Visit website</a></p>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
+            <img src="{% static 'portfolio/images/SmsHome.png' %}" alt="Image" class="img-fluid" class="img-fluid">
+          </div>
+          <div class="col-lg-5 h-100 jm-sticky-top mr-auto order-2 order-lg-1">
+            <h3>School Management System</h3>
+            <p class="mb-4">An online management system for an institution. Separate management areas for students,
+              teachers, curriculam and administrative entities.</p>
+            <p class="mb-5"><strong class="text-black">Technologies:</strong> Django, Sql Server</p>
+
+            <p class="mb-4"><a href="http://mushiahmad1101.pythonanywhere.com/" class="readmore">Visit website</a></p>
+
+
+          </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="row mb-5">
+          <div class="col-lg-6 mb-4 mb-lg-0 img-float-container">
+            <img class="img-wafill" src="{% static 'portfolio/images/WafillHome.jpg' %}" alt="Image" class="img-fluid" class="img-fluid">
+            <img class="img-wafill" src="{% static 'portfolio/images/WafillShop.jpg' %}" alt="Image" class="img-fluid" class="img-fluid">
+            <img class="img-wafill" src="{% static 'portfolio/images/WafillOrder.jpg' %}" alt="Image" class="img-fluid" class="img-fluid">
+          </div>
+          <div class="col-lg-5 h-100 jm-sticky-top ml-auto">
+            <h3>WaFill</h3>
+            <p class="mb-4">An online water bottles ordering android app. You can get bottled water at your doorstep on
+              a click.</p>
+            <p class="mb-5"><strong class="text-black">Technologies:</strong> React Native, Firebase</p>
+
+
+          </div>
+        </div>
+
+
+
+        <div class="row mb-5">
+          <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
+            <img src="{% static 'portfolio/images/udesign.png' %}" alt="Image" class="img-fluid" class="img-fluid">
+
+          </div>
+          <div class="col-lg-5 h-100 jm-sticky-top mr-auto order-2 order-lg-1">
+            <h3>U Design</h3>
+            <p class="mb-4">A desktop application to order customized shoes. User can customize a shoe template
+              including design, color and add ons.</p>
+            <p class="mb-5"><strong class="text-black">Technologies:</strong> .Net, Sql Server</p>
+
+            <p class="mb-4"><a href="https://github.com/mushiahmad-007/UDesign" class="readmore">GitHub Repository</a>
+            </p>
+
+
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-lg-6 mb-4 mb-lg-0 wafill-img-container">
+            <img class="img-predictor" src="{% static 'portfolio/images/predictor1.png' %}" alt="Image" class="img-fluid" class="img-fluid">
+            <img class="img-predictor" src="{% static 'portfolio/images/predictor2.png' %}" alt="Image" class="img-fluid" class="img-fluid">
+          </div>
+          <div class="col-lg-5 h-100 jm-sticky-top ml-auto">
+            <h3>Digit Predictor</h3>
+            <p class="mb-4">A learned single digit predictor. It is trained on 20x20 5000 greyscale images. It is trained on a logistic regression model. Hypothesis function, cost function and gradient descent are made from scratch. Any external library is not used.
+            </p>
+            <p class="mb-5"><strong class="text-black">Technology:</strong> Octave
+            </p>
+
+
+            <p class="mb-4"><a href="https://github.com/mushiahmad-007/ML/tree/master/digit_predictor" class="readmore">View Source Code</a></p>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="site-section" id="contact-section">
+    <div class="container">
+      <form id="contact-form" class="contact-form" method="POST">
+        {% csrf_token %}
+        <div class="section-title text-center mb-5">
+          <span class="sub-title mb-2 d-block">Get In Touch</span>
+          <h2 class="title text-primary">Contact Me</h2>
+        </div>
+
+        <div class="row mb-4">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <input type="text" class="form-control" id="FirstName" placeholder="First name">
+          </div>
+          <div class="col-md-6">
+            <input type="text" class="form-control" id="LastName" placeholder="Last name">
+          </div>
+        </div>
+
+        <div class="row mb-4">
+          <div class="col-12">
+            <input type="text" class="form-control" id="Email" placeholder="Email">
+          </div>
+        </div>
+
+        <div class="row mb-4">
+          <div class="col-12">
+            <textarea class="form-control" id="Message" cols="30" rows="10" placeholder="Message"></textarea>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary btn-md">Send Message</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <div class="row mb-5">
+            <div class="col-12">
+              <h3 class="footer-heading mb-4">About</h3>
+              <p>
+
+              I have experience of Web and Mobile App Development for almost more than a year. I am currently
+              working in Funnel Beam as a Full Stack Developer. I have also done several free lancing projects during my academic
+              period. I have keen interest in hands on learning the latest technologies. I'm hard working and fully devoted to my work.
+              </p>
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="col-lg-3 ml-auto">
+
+          <div class="row mb-5">
+            <div class="col-md-12">
+              <h3 class="footer-heading mb-4">Navigation</h3>
+            </div>
+            <div class="col-md-6 col-lg-6">
+              <ul class="list-unstyled">
+                <li><a href="#home-section">Home</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#portfolio-section">Portfolio</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- <div class="col-lg-4 mb-5 mb-lg-0">
+
+          <div class="mb-5">
+            <h3 class="footer-heading mb-2">Subscribe Newsletter</h3>
+
+
+            <form method="post" class="form-subscribe">
+              {% csrf_token %}
+              <div class="form-group mb-3">
+                <input type="text" class="form-control border-white text-white bg-transparent" placeholder="Enter email"
+                  aria-label="Enter Email" aria-describedby="button-addon2">
+              </div>
+              <div class="form-group">
+                <button class="btn btn-primary px-5" type="submit">Subscribe</button>
+              </div>
+            </form>
+
+          </div>
+
+
+
+
+        </div> -->
+
+      </div>
+      <div class="row pt-5 mt-5 text-center">
+        <div class="col-md-12">
+          <div class="mb-4">
+            <a href="https://www.facebook.com/mubasher.ahmad.56" class="pl-0 pr-3"><span
+                class="icon-facebook"></span></a>
+            <a href="https://twitter.com/mushi_mubashir" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+            <a href="https://github.com/mushiahmad-007" class="pl-3 pr-3"><span class="icon-github"></span></a>
+            <a href="https://www.linkedin.com/in/mubasher-ahmad-316164180" class="pl-3 pr-3"><span
+                class="icon-linkedin"></span></a>
+          </div>
+
+          <p>
+
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved | <a
+              href="#main" target="_blank">Mubasher Ahmad</a>
+
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  </div>
+
+  <script defer src="{% static 'portfolio/js/jquery-3.3.1.min.js' %}"></script>
+  <script defer src="{% static 'portfolio/js/popper.min.js' %}"></script>
+  <script defer src="{% static 'portfolio/js/bootstrap.min.js' %}"></script>
+  <script defer src="{% static 'portfolio/js/owl.carousel.min.js' %}"></script>
+  <script defer src="{% static 'portfolio/js/aos.js' %}"></script>
+  <script defer src="{% static 'portfolio/js/jquery.sticky.js' %}"></script>
+  <script defer src="{% static 'portfolio/js/stickyfill.min.js' %}"></script>
+  <script defer src="{% static 'portfolio/js/jquery.easing.1.3.js' %}"></script>
+
+  <script defer src="{% static 'portfolio/js/jquery.fancybox.min.js' %}"></script>
+  <script defer src="{% static 'portfolio/js/main.js' %}"></script>
+
+
+
+</body>
+
+</html>
