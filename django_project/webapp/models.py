@@ -18,5 +18,5 @@ class Users(models.Model):
 
 
     def __str__(self):
-        return self.first_name
+        return self.last_name
 
