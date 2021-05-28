@@ -40,7 +40,7 @@ SECRET_KEY = '8!s12*oz=wuyr4sb*eb2u6yen8%8pn_gl_mo8u1^k0csud_t*2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -55,7 +55,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'webapp',
+    'webapp.apps.WebappConfig',
     'rest_framework',
     'drf_yasg'
 ]
@@ -140,6 +140,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = 'media/'
 
 
 LOGIN_REDIRECT_URL = '/swagger/'

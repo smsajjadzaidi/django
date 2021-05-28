@@ -8,6 +8,7 @@ django = "*"
 djangorestframework = "*"
 drf-yasg = "*"
 sentry_sdk = "*"
+pytest-django = "*"
 
 [dev-packages]
 
