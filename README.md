@@ -1,1 +1,1 @@
-# django
+# practice django repository
